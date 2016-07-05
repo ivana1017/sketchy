@@ -2,12 +2,22 @@ $(document).ready(function(){
 	const DEFAULT = 16;
 	generateGrid(DEFAULT);
 
+	pixelate();
+
+	$('button').click(function(){
+		$('.container').empty();
+		var dim = prompt("Please enter a new sketchpad size:");
+		generateGrid(dim);
+		pixelate();
+	});	
+
+});
+
+function pixelate(){
 	$('.stack').mouseenter(function(){
 		$(this).addClass('pixelated');
 	});
-
-	
-});
+}
 
 function generateGrid(dimension){
 	var size = dimension * dimension;
