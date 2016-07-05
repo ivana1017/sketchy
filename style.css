@@ -1,9 +1,19 @@
+body {
+	text-align: center;
+}
+
+button {
+	padding: 1em;
+	border-radius: .5em;
+	border: .05em solid black;
+}
+
 .clear {
 	clear: both;
 }
 
 .stack {
-	border: 1px solid black;
+	border: .05em solid black;
 	width: 1em;
 	height: 1em;
 	float: left;
@@ -14,7 +24,7 @@
 }
 
 .container {
-	margin: 0 auto;
+	display: inline-block;
 	overflow: auto;
-	width: 960px;
+	margin-top: 1em;
 }

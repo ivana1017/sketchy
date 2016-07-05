@@ -1,10 +1,12 @@
 $(document).ready(function(){
-	var dim = prompt("Please enter your desired sketchpad dimension:")
-	generateGrid(dim);
+	const DEFAULT = 16;
+	generateGrid(DEFAULT);
 
 	$('.stack').mouseenter(function(){
 		$(this).addClass('pixelated');
 	});
+
+	
 });
 
 function generateGrid(dimension){
