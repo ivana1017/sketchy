@@ -9,6 +9,12 @@
 	float: left;
 }
 
+.pixelated {
+	background-color: red;
+}
+
 .container {
+	margin: 0 auto;
 	overflow: auto;
+	width: 960px;
 }
